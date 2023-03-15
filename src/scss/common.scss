@@ -1,0 +1,37 @@
+@use "variables" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+
+// Reset some CSS rules
+* {
+    margin: 0;
+    padding: 0;
+ 
+    box-sizing: border-box;
+ }
+ 
+ body, h1, h2, h3, h4, h5, h6, ul, ol, li, input, form {
+    margin: 0;
+    padding: 0;
+ }
+ 
+ a {
+    text-decoration: none;
+ }
+ 
+ ul, ol {
+    list-style-type: none;
+ }
+ 
+ // Common rules
+ body {
+    width: 100vw;
+
+    background-color: $bgColor;
+    font-family: 'Ubuntu', Arial, sans-serif;
+ }
+
+ .container {
+    width: 1280px;
+ }
