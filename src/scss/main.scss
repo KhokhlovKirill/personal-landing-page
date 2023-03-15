@@ -64,7 +64,11 @@
 }
 
 .main-top {
-    margin-top: 80px;
+    display: grid;
+    grid-template-columns: auto 35%;
+
+    margin-top: 60px;
+    margin-bottom: 115px;
 }
 
 .main-h1 {
@@ -102,34 +106,273 @@
     gap: 30px;
 
     &__item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
         width: 130px;
         height: 150px;
 
         border-radius: 15px;
+
+        transition: $transition;
+
+        &:hover {
+            transform: scale(1.07);
+        }
+
+        & a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            height: 100%;
+        }
     }
+}
+
+.main-social-networks-icon {
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .vk-card {
     background-color: #0077ff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 119, 255, 0.25));
+
+    .main-social-networks-icon {
+        width: 114px;
+        height: 114px;
+
+        background-image: url(../img/vk.svg);
+    }
 }
 
 .tg-card {
     background-color: #2aabee;
+    filter: drop-shadow(0px 4px 4px rgba(42, 171, 238, 0.25));
+
+    .main-social-networks-icon {
+        width: 114px;
+        height: 114px;
+
+        background-image: url(../img/tg.svg);
+    }
 }
 
 .email-card {
     background-color: #ee592a;
+    filter: drop-shadow(0px 4px 4px rgba(238, 89, 42, 0.25));
+
+    .main-social-networks-icon {
+        width: 114px;
+        height: 114px;
+
+        background-image: url(../img/mail.svg);
+    }
 }
 
-.main-social-network-name { 
+.main-social-network-name {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
 
-    color: #FFFFFF;
+    color: #ffffff;
+}
+
+.main-top-right {
+    align-self: center;
+}
+
+.main-img {
+    width: 450px;
+    height: 450px;
+
+    border-radius: 50%;
+}
+
+.main-h2 {
+    margin-bottom: 70px;
+
+    color: $accentColor;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+}
+
+// Skills
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 110px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    width: 100%;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 350px;
+        height: 400px;
+
+        padding: 30px 53px;
+
+        border-radius: 15px;
+
+        transition: $transition;
+
+        &:hover {
+            transform: scale(1.07);
+        }
+    }
+}
+
+.html-card {
+    background-color: #f26b3a;
+}
+
+.css-card {
+    background-color: #33a9dc;
+}
+
+.js-card {
+    background-color: #dd9428;
+}
+
+.skill-card-icon {
+    width: 220px;
+    height: 220px;
+
+    margin-bottom: 50px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.html-icon {
+    background-image: url("../img/html.svg");
+}
+
+.css-icon {
+    background-image: url("../img/css.svg");
+}
+
+.js-icon {
+    background-image: url("../img/js.svg");
+}
+
+.skill-card-name {
+    color: #ffffff;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+// Portfolio
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    width: 100%;
+
+    margin-bottom: 50px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        width: 350px;
+
+        border-radius: 15px;
+
+        transition: $transition;
+
+        &:hover {
+            transform: scale(1.07);
+        }
+    }
+}
+
+#portfolioItem1 {
+    background-color: orangered;
+}
+
+#portfolioItem2 {
+    background-color: grey;
+}
+
+#portfolioItem3 {
+    background-color: #004aad;
+}
+
+.portfolio-card-img {
+    width: 100%;
+    height: 60%;
+
+    margin-bottom: 20px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.portfolio-card-name {
+    margin-left: 20px;
+    margin-bottom: 15px;
+
+    color: #ffffff;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.portfolio-card-description {
+    margin-left: 15px;
+
+    color: #ffffff;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.portfolio-more-link {
+    margin-bottom: 50px;
+
+    color: $accentColor;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+
+    transition: $transition;
+
+    &:hover {
+        color: darken($accentColor, 25%);
+    }
 }
