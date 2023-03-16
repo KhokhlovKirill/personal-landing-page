@@ -8,6 +8,23 @@
     padding: 40px 0;
 }
 
+.header-logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 28px !important;
+
+    & a {
+        color: $accentColor;
+
+        &:hover {
+            color: darken($accentColor, 25%);
+        }
+    }
+}
+
 .header-nav-list {
     display: flex;
     justify-content: center;
@@ -168,6 +185,19 @@
     }
 }
 
+.gh-card {
+    background-color: #000000;
+    filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+
+    .main-social-networks-icon {
+        width: 80px;
+        height: 114px;
+
+        background-image: url(../img/github.svg);
+        background-size: contain;
+    }
+}
+
 .main-social-network-name {
     font-style: normal;
     font-weight: 400;
@@ -290,9 +320,9 @@
 
 .portfolio-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
 
     width: 100%;
 
@@ -339,6 +369,7 @@
 
 .portfolio-card-name {
     margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 15px;
 
     color: #ffffff;
@@ -350,7 +381,8 @@
 }
 
 .portfolio-card-description {
-    margin-left: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
 
     color: #ffffff;
 
