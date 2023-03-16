@@ -7,6 +7,8 @@
 .contacts-h1 {
     margin-top: 20px;
     margin-bottom: 20px;
+
+    text-align: center;
 }
 
 .contacts-block {
@@ -23,10 +25,15 @@
 }
 
 .contacts-social-card {
-    width: 25vw;
+    min-width: 195px;
+
+    flex-grow: 1;
+
+    padding: 0 5px 10px 5px;
 
     .main-social-network-name {
         font-size: 20px;
+        text-align: center;
     }
 }
 
@@ -37,6 +44,7 @@
 .contacts-list {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 30px;
 
     width: 100%;
