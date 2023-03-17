@@ -31,7 +31,7 @@
     @media screen and (max-width: 1000px) {
         position: static;
         display: none;
-    
+
         left: 0;
         top: 0%;
         transform: none;
@@ -135,7 +135,7 @@
 
     @media screen and (max-width: 800px) {
         grid-template-columns: 1fr;
-        grid-template-areas: 'img' 'main';
+        grid-template-areas: "img" "main";
     }
 }
 
